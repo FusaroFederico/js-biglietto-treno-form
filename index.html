@@ -16,7 +16,7 @@
         <h1 class="mb-3 text-center">Calcola il prezzo del biglietto</h1>
         <div class="row">
 
-            <div class="col-8 mx-auto bg-primary-subtle rounded p-4">
+            <div class="col-8 mx-auto bg-primary-subtle rounded p-4 mb-4">
                 <form method="get" class="row" id="calc-form">
                     <div class="col-6 mb-3">
                         <label for="passenger-age" class="form-label">Inserisci la tua età</label>
@@ -29,10 +29,23 @@
                     <div class="col-4">
                         <button type="submit" class="btn btn-primary" id="form-btn">Calcola prezzo</button>
                     </div>
-
-
                 </form>
-
+            </div>
+            <div class="col-8 row mx-auto border border-3 border-warning rounded p-4 bg-body-tertiary" id="ticket">
+                <h3 class="fs-4">Dati Passeggero</h3>
+                <div class="col-12">
+                    Età del passeggero: <span id="ticket-age"></span>
+                </div>
+                <div class="col-12 border-bottom pb-2 mb-3">
+                    Km da percorrere: <span id="ticket-km"></span>
+                </div>
+                <div class="col-6 d-flex align-items-middle">
+                    <span class="bg-warning rounded fw-medium p-2">Costo del biglietto: <span
+                            id="ticket-price"></span></span>
+                </div>
+                <div class="col-6 text-end">
+                    <button class="btn btn-primary">Acquista biglietto</button>
+                </div>
             </div>
         </div>
     </div>
