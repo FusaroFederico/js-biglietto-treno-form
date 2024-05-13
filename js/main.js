@@ -27,4 +27,5 @@ calcForm.addEventListener('submit', function (event) {
     document.getElementById('ticket-age').innerText = passengerAge.value;
     document.getElementById('ticket-km').innerText = passengerKm.value;
     document.getElementById('ticket-price').innerText = price + ' €';
+    document.getElementById('ticket').classList.remove('d-none');
 }); 
