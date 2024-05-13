@@ -23,4 +23,8 @@ calcForm.addEventListener('submit', function (event) {
     price = Math.round(price * 100) / 100;
     console.log(price);
 
-});
+    // biglietto
+    document.getElementById('ticket-age').innerText = passengerAge.value;
+    document.getElementById('ticket-km').innerText = passengerKm.value;
+    document.getElementById('ticket-price').innerText = price + ' €';
+}); 
